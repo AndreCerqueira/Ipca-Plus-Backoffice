@@ -113,13 +113,13 @@ button:hover {
 .list_item {
     background-color: #1c87c9; 
     color: white; 
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 
 .edit_bt {
-    background-color: #5a9ec9; 
-    color: white; 
-    border-radius: 25px;
+    display:      block;
+    margin-left:  auto;
+    margin-right: 0;
 }
 
 

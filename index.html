@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="main">
@@ -12,39 +12,39 @@
         <form action="/" class="wrapper">
 
             <div class="box a">
-            <h1>Alunos</h1>
+            <h1>Eventos</h1>
             </div>
 
             <div class="box c">
-            <label for="numero">Numero</label> <br>
-            <input id="txt1" class="text-box" type="text" size="40" required placeholder="Insira um numero"> <br>
-            </div>
-
-            <div class="box b">
-                Lista de Alunos
-                <div class="list">
-                    <ul id="list"></ul>
-                </div>
+            <label for="numero">Nome</label> <br>
+            <input id="txt1" class="text-box" type="text" size="40" required placeholder="Insira o Nome"> <br>
             </div>
 
             <div class="box d">
-                <label for="nome">Nome</label> <br>
-                <input id="txt2" class="text-box" type="text" size="40" required placeholder="Insira o Nome"> <br>
+                <label for="nome">Descrição</label> <br>
+                <input id="txt2" class="text-box" type="text" size="40" required placeholder="Insira uma Descrição"> <br>
             </div>
             
             <div class="box e">
-                <label for="curso">Curso</label> <br>
-                <input id="txt3" class="text-box" type="text" size="40" required placeholder="Insira o Curso"> <br>
+                <label for="curso">Dia</label> <br>
+                <input id="txt3" class="text-box" type="text" size="40" required placeholder="Insira o Dia"> <br>
             </div>
 
             <div class="box f">
-                <label for="telefone">Telefone</label> <br>
-                <input id="txt4" class="text-box" type="text" size="40" required placeholder="Insira o Telefone"> <br>
+                <label for="telefone">Mês</label> <br>
+                <input id="txt4" class="text-box" type="text" size="40" required placeholder="Insira o Mês"> <br>
             </div>
 
             <div class="box g">
-                <label for="email">Email</label> <br>
-                <input id="txt5" class="text-box" type="text" size="40" required placeholder="Insira o Email"> <br>
+                <label for="email">Horas</label> <br>
+                <input id="txt5" class="text-box" type="text" size="40" required placeholder="Insira as Horas"> <br>
+            </div>
+
+            <div class="box b">
+                Lista de Eventos
+                <div class="list">
+                    <ul id="list"></ul>
+                </div>
             </div>
 
             <button type="submit" href="/">Enviar</button>
@@ -54,10 +54,10 @@
 
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
-    <script src="configDB.js"></script>
-    <script src="crud.js"></script>
+    <script src="js/configDB.js"></script>
+    <script src="js/crud.js"></script>
 
-    
+    <!--
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
@@ -66,18 +66,18 @@
       
         // Your web app's Firebase configuration
         const firebaseConfig = {
-          apiKey: "AIzaSyAsDIRsGrJ8h3HWeskqFzJjIEHh21cpqi4",
-          authDomain: "alunos-27839.firebaseapp.com",
-          projectId: "alunos-27839",
-          storageBucket: "alunos-27839.appspot.com",
-          messagingSenderId: "871983610806",
-          appId: "1:871983610806:web:3b2f1d2b284228c1a09f17"
+          apiKey: "AIzaSyB6ywAtHtmkrIMHtgjoS0ciDuw8nfEs0to",
+          authDomain: "ipcaplus.firebaseapp.com",
+          projectId: "ipcaplus",
+          storageBucket: "ipcaplus.appspot.com",
+          messagingSenderId: "209455028652",
+          appId: "1:209455028652:android:ce5340decf9025e37f4209"
         };
       
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
       </script>
-    <!-- -->
+     -->
 </body>
 </html>
 
