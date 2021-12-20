@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+
+        <form action="/" class="wrapper">
+
+            <div class="box a">
+            <h1>Alunos</h1>
+            </div>
+
+            <div class="box c">
+            <label for="numero">Numero</label> <br>
+            <input id="txt1" class="text-box" type="text" size="40" required placeholder="Insira um numero"> <br>
+            </div>
+
+            <div class="box b">
+                Lista de Alunos
+                <div class="list">
+                    <ul id="list"></ul>
+                </div>
+            </div>
+
+            <div class="box d">
+                <label for="nome">Nome</label> <br>
+                <input id="txt2" class="text-box" type="text" size="40" required placeholder="Insira o Nome"> <br>
+            </div>
+            
+            <div class="box e">
+                <label for="curso">Curso</label> <br>
+                <input id="txt3" class="text-box" type="text" size="40" required placeholder="Insira o Curso"> <br>
+            </div>
+
+            <div class="box f">
+                <label for="telefone">Telefone</label> <br>
+                <input id="txt4" class="text-box" type="text" size="40" required placeholder="Insira o Telefone"> <br>
+            </div>
+
+            <div class="box g">
+                <label for="email">Email</label> <br>
+                <input id="txt5" class="text-box" type="text" size="40" required placeholder="Insira o Email"> <br>
+            </div>
+
+            <button type="submit" href="/">Enviar</button>
+        </form>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="configDB.js"></script>
+    <script src="crud.js"></script>
+
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAsDIRsGrJ8h3HWeskqFzJjIEHh21cpqi4",
+          authDomain: "alunos-27839.firebaseapp.com",
+          projectId: "alunos-27839",
+          storageBucket: "alunos-27839.appspot.com",
+          messagingSenderId: "871983610806",
+          appId: "1:871983610806:web:3b2f1d2b284228c1a09f17"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+    <!-- -->
+</body>
+</html>
+
