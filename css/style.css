@@ -1,75 +1,315 @@
 body {
-    min-height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: Roboto, Arial, sans-serif;
-    font-size: 14px;
-    color: #666;
-    background: #1c87c9;
-}
-
-.main {
-    display: flex;
-    justify-content: center;
-    background: #1c87c9;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    margin-bottom: 30px;
-    color: #1c87c9;
+    color: #209D6A;
 }
 
-form {
-    padding: 25px;
-    margin: 25px;
-    box-shadow: 0 2px 5px #f5f5f5; 
-    background: #f5f5f5; 
+
+.searchList {
+    margin-top: 2%;
+    width: 96%;
 }
 
-.text-box {
-    width: calc(100% - 18px);
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #1c87c9;
+.searchList input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left:50px;
+    background-image: url(../images/search.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
 }
 
-.optional-div {
-    border: 1px solid #1c87c9;
-    padding: 2%;
-    margin-bottom: 20px;
+
+/* 
+ ****************************
+    Estilo da NavBAr
+ ****************************
+*/
+
+.sideBar {
+    height: 100%;
+    width: 10%; 
+
+    /* Stay in place */
+    position: fixed;
+
+    /* Stay on top */
+    z-index: 1;
+
+    background-color: #037B4A;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+
+    /*border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;*/
 }
 
-.optional-item {
-    margin-left: 13%;
+.sideBar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+
 }
 
-#country {
-    border: 1px solid #1c87c9;
-    padding: 2%;
-    margin-bottom: 20px;
+.sideBar a:hover {
+    text-shadow: 2px black;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
     width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    border-radius: 20px;
+    background-color: #fefefe00;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    width: 20%;
+    height: 40%;
+}
+
+/* 
+ ****************************
+    Estilo dos quadrados 
+ ****************************
+*/
+.cardLogin {
+
+    margin: auto;
+    margin-top: 5%;
+
+    width: 25%; 
+
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 30px;
+
+}
+
+.cardLogin h2 {
+    color: #209D6A;
+    text-align: center;
+}
+
+.cardLogin form {
+
+    width: auto; /* Can be in percentage also. */
+    height: auto;
+    margin: auto;
+    position: relative;
+
+    padding: 10px;
+}
+
+.cardButton {
+
+    height: 150px;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    background-color: #209D6A;
+    border-radius: 10px;
+    padding-top: 60px;
+
+}
+
+.cardButton h3 {
+    color: white;
+}
+
+.item-list .item-info {
+
+    margin-left: 5%;
+}
+
+.item-list .delete-item {
+
+    color: white;
+    background: #f34646;
+    width: 10%;
+
+    /* Shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    border-radius: 0px 10px 10px 0px;
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.item-list .edit-item {
+
+    color: black;
+    background: white;
+    width: 10%;
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+
+
+.item-list .card-body {
+    
+    color: black;
+    width: 30%;
+    /* Shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    border-radius: 10px 0px 0px 10px;
+
 }
 
 button {
+    color: white;
+    background: #037B4A; 
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
-    padding: 10px;
+
     border: none;
-    background: #1c87c9; 
-    font-size: 16px;
-    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
 }
 
 button:hover {
-    background: #2371a0;
-}    
+    
+    background: #209D6A;
+}
 
+:root {
+    --form-bg: white;
+    --form-border: rgb(44, 36, 36);
+    --form-shadow: #dfae4b;
+    --form-focus: rgb(123, 121, 121);
+    --font-size: 12pt;
+    --font-face: Arial, sans-serif;
+    --font-color: #2a293e;
+}
+
+
+input {
+    width: 100%;
+    font-size: var(--font-size);
+    line-height: var(--font-size);
+    font-family: var(--font-face);
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: var(--form-bg);
+}
+
+ul li:first-child {
+    width: 100%;
+    font-family: var(--font-face);
+    font-size: var(--font-size);
+    color: #a4a4a9;
+    margin-top: 0px;
+    list-style: none;
+    /* border: 1px solid black; */
+}
+
+ul li {
+    width: 100%;
+    font-family: var(--font-face);
+    font-size: var(--font-size);
+    color: #a4a4a9;
+    margin-top: 20px;
+    list-style: none;
+    /* border: 1px solid black; */
+}
+
+select {
+    /* A reset of styles, including removing the default dropdown arrow */
+    /*appearance: none;*/
+    padding: 20px;
+    /* height: 60px; */
+    width: 100%;
+    cursor: inherit;
+    font-size: var(--font-size);
+    line-height: var(--font-size);
+    font-family: var(--font-face);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: var(--form-bg);
+    color: var(--font-color);
+}
+
+hr {
+    margin-top: 10px;
+    border-top: 0.5px solid var(--form-focus);
+}
+
+.rem,
+.edit {
+    position: relative;
+    float: right;
+    background-color: var(--form-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 10px; */
+    /* height: 30px; */
+    padding: 5px;
+    margin-left: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    align-content: center;
+}
+
+#rem:hover,
+#edit:hover {
+    background-color: var(--form-bg);
+}
+
+.formBoxes {
+    background: white;
+
+    /* Shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    border-radius: 10px 10px 10px 10px;
+}
 
 .wrapper {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 40% 60%;
+    color: #444;
     font-size: 20px;
     margin-top: 2%;
+    margin-right: 5%;
+}
+
+.box {
+    border-radius: 5px;
+    padding: 20px;
 }
 
 .a {
@@ -79,14 +319,19 @@ button:hover {
 
 .b {
     grid-column: 2;
-    grid-row: 1 / 7;
+    grid-row: 1 / 9;
+
 }
 
 .b .list {
+
     overflow: auto;
     width: 100%;
-    height: 95%;
-    margin: 10px, 10px 10px 0px;
+    height: 100%;
+    font-size: var(--font-size);
+    line-height: var(--font-size);
+    font-family: var(--font-face);
+    padding: 20px;
 
 }
 
@@ -102,43 +347,35 @@ button:hover {
 
 .e {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 6;
 }
 
 .f {
     grid-column: 1;
+    grid-row: 4;
+}
+
+.g {
+    grid-column: 1;
     grid-row: 5;
 }
 
-.list_item {
-    background-color: #1c87c9; 
-    color: white; 
-    /* border-radius: 25px; */
+.h {
+    grid-column: 1;
+    grid-row: 6;
 }
 
-.edit_bt {
-    display:      block;
-    margin-left:  auto;
-    margin-right: 0;
+.i {
+    grid-column: 1;
+    grid-row: 7;
 }
 
+.j {
+    grid-column: 1;
+    grid-row: 8;
+}
 
-@media screen and (max-width: 600px) {
-    
-    .wrapper {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 100%;
-    }
-
-    .box {
-        border-radius: 10px;
-        padding: 20px;
-    }
-
-    .b {
-        grid-column: 1;
-        grid-row: 6;
-    }
-
+.k {
+    grid-column: 1;
+    grid-row: 9;
 }
